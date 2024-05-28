@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "Tiresias Infofont";
+    src: url("Tiresias_Infofont.ttf"); /* Relative path */
+}
+:root{ /* My own variables! */
+    /* These variables can be used anywhere in the code! */
+    /* They must start with -- */
+    --centre: center; /* I need it to accommodate British spelling. */
+    --sky: #00c0ff;
+    --ocean: #00809c; /* var() is unnecessary when defining a variable */
+    --teal: var(--ocean); /* but when using it, var() is necessary */
+    --left-and-right·spacing: 20%;
+}
+body, html {
+    margin: 0;
+    height: 100%;
+    color: white;
+    font-size: 35px;
+    text-align: left;
+    font-family: "Tiresias Infofont";
+    overflow: hidden; /* disables scrolling */
+    background-color: var(--sky);
+    cursor: None; /* I want users to be slightly creeped out when the cursor is missing. */
+}
+----{ /* Odd, but valid CSS*/
+    /* You can have 2 or more hyphens! */
+    --: --; /* this does nothing. */
+}
+.CBeebies sky { /* Even no-break spaces are allowed in CSS variable names!
+    /* It's a different space! */
+    height: 70%;
+    background-color: #00c0ff;
+    padding-left: var(--left-and-right·spacing);
+    padding-right: var(--left-and-right·spacing);
+    top: 0%;
+} 
+#©·Mehdical·Man{ /* You can go WILD with id names */
+    background-color: black;
+    text-align: var(--centre);
+    padding: 0px;
+}
+#Mehdical·Manǃ /* Using non-ASCII IS allowed.*/ { 
+    /* Move the section of text downwards */
+    padding-bottom: -10%;
+    margin-top: 2%;
+}
+.CBeebies ocean {
+    /* ocean margin */
+    height: 100%;
+    background-color: var(--ocean);
+    padding-left: var(--left-and-right·spacing);
+    padding-right: var(--left-and-right·spacing);
+    padding-top: 2.5%;    
+}
+::selection{
+    background-color: white;
+    color: black;
+}
+.CBeebies SVG {
+    POSITION: relative; /*Properties can also be in capital letters.*/
+    top: 15%;
+    left: 50%;
+    user-select: None; /*Heh, Python None.*/
+    transform: translate(-50%, -50%) scale(0.5); 
+    max-width: 100%;
+    text-align: var(--centre);
+}
