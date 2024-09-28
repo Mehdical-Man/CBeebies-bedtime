@@ -3,26 +3,51 @@
     src: url("./Tiresias_Infofont.ttf"); /* Relative path */
 }
 
+
 :root{ /* My own variables! */
     /* These variables can be used anywhere in the code! */
     /* They must start with -- */
     --centre: center; /* I need it to accommodate British spelling. */
     --sky: #00c0ff;
     --ocean: #00809c;
-    --teal: var(--ocean);
+    --font-size: 35px;
     --left-and-right·spacing: 20%;
     --fonts: "Tiresias Infofont"; /* Might add substitution fonts */
     --text-colour: white;
     --CBeebies-yellow: #ffe400;
     --CBeebies-purple: #462682;
-    --global-cursor-state: None;
+    --global-cursor-state: none;
 }
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    
+    
+    color: #fff;
+    text-align: center;
+    padding: 0.5%;
+    border-color: #202020;
+    background-color: #404040;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 6px;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+  
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+visibility: visible;
+}
+
+
 body, html {
     margin: 0px;
     padding: 0px;
     height: 100%;
-    color: white;
-    font-size: 35px;
+    color: var(--text-colour);
+    font-size: var(--font-size);
     text-align: left;
     font-family: var(--fonts);
     overflow: hidden; /* disables scrolling */
@@ -40,7 +65,7 @@ body, html {
     background-color: #00c0ff;
     padding-left: var(--left-and-right·spacing);
     padding-right: var(--left-and-right·spacing);
-    top: 0%;
+    top: 1px;
 }
 
 .CBeebies ocean {
@@ -56,7 +81,7 @@ body, html {
     padding: 0px;
 }
 #Mehdical Manǃ /* Using non-ASCII is allowed.*/ {
-    /* Moves the section of text downwards */
+    /* Space between CBeebies logo and bedtime message. */
     margin-top: 2%;
 }
 
@@ -85,6 +110,28 @@ body, html {
     text-decoration: underline;
 
 
+}
+
+@media  screen and (max-width: 1500px)  and (min-width: 1200px){
+    body, html {
+        font-size: calc(30px);
+    }
+    .CBeebies sky, .CBeebies ocean  { /* Even no-break spaces are allowed in CSS variable names!
+        /* It's a different space! */
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+@media  screen and (max-width: 1200px)  and (min-width: 0px){
+    body, html {
+        font-size: calc(24px);
+    }
+    .CBeebies sky, .CBeebies ocean  { /* Even no-break spaces are allowed in CSS variable names!
+        /* It's a different space! */
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 }
 
 /*
