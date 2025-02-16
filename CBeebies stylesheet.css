@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Tiresias Infofont";
-    src: url("./Tiresias_Infofont.ttf"); /* Relative path */
+    src: url("./Tiresias_Infofont.ttf");
 }
 
 
@@ -20,10 +20,8 @@
 }
 
 .tooltip .tooltiptext {
-    visibility: hidden;
-    
-    
-    color: #fff;
+    visibility: hidden;    
+    color: var(--text-colour);
     text-align: center;
     padding: 0.5%;
     border-color: #202020;
@@ -55,14 +53,14 @@ body, html {
     /* I want people to stare at that screen, remembering how scary it was for them when they were younger. */
     cursor: var(--global-cursor-state);
 }
-----{ /* Odd, but valid CSS*/
+---- { /* Odd, but valid CSS*/
     /* You can have 2 or more hyphens! */
     --: --; /* this does nothing. */
 }
-.CBeebies sky, .CBeebies ocean  { /* Even no-break spaces are allowed in CSS variable names!
+.CBeebies sky, .CBeebies ocean { /* Even no-break spaces are allowed in CSS variable names!
     /* It's a different space! */
     height: 70%;
-    background-color: #00c0ff;
+    background-color: var(--sky);
     padding-left: var(--left-and-right·spacing);
     padding-right: var(--left-and-right·spacing);
     top: 1px;
@@ -70,7 +68,7 @@ body, html {
 
 .CBeebies ocean {
     /* ocean margin */
-    height: 100%;
+    height: 100%; /* Can be higher than 30% (> 30%; not ≥ 30%)*/
     background-color: var(--ocean);
     padding-top: 2.5%;
 }
@@ -112,7 +110,7 @@ body, html {
 
 }
 
-@media  screen and (max-width: 1500px)  and (min-width: 1200px){
+@media screen and (max-width: 1500px)  and (min-width: 1200px){
     body, html {
         font-size: calc(30px);
     }
@@ -127,7 +125,7 @@ body, html {
     body, html {
         font-size: calc(24px);
     }
-    .CBeebies sky, .CBeebies ocean  { /* Even no-break spaces are allowed in CSS variable names!
+    .CBeebies sky, .CBeebies ocean  {
         /* It's a different space! */
         padding-left: 10%;
         padding-right: 10%;
