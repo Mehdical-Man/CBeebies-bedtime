@@ -84,7 +84,7 @@ body, html {
 }
 
 .CBeebies SVG {
-    POSITION: relative; /*Properties can also be in capital letters.*/
+    position: relative; /*Properties can also be in capital letters.*/
     top: 15%;
     left: 50%;
     user-select: None; /*Heh, Python None.*/
@@ -93,7 +93,7 @@ body, html {
     text-align: var(--centre);
 }
 
-.HIDDEN·hyperlinkǃ {
+.hidden·hyperlinkǃ {
     /* I want people to appreciate the “This Is CBeebies” page
     without the default hyperlink style ruining the aesthetic. */
     color: var(--text-colour);
@@ -102,12 +102,10 @@ body, html {
 }
 
 /* People will accidentally discover that “cbeebies.co.uk” is a functioning link when hovering over it. */
-.HIDDEN·hyperlinkǃ:hover {
+.hidden·hyperlinkǃ:hover {
     background-color: var(--CBeebies-yellow);
     color: var(--CBeebies-purple);
     text-decoration: underline;
-
-
 }
 
 @media screen and (max-width: 1500px)  and (min-width: 1200px){
@@ -132,10 +130,6 @@ body, html {
     }
 }
 
-/*
-::selection {
-    background-color: white;
-    color: black;
+div {
+    overflow: hidden;
 }
-    */
-
