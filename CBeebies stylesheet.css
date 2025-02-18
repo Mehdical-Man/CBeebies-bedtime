@@ -84,11 +84,22 @@ body, html {
 }
 
 .CBeebies SVG {
-    position: relative; /*Properties can also be in capital letters.*/
+    POSITION: relative; /*Properties can also be in capital letters.*/
     top: 15%;
     left: 50%;
     user-select: None; /*Heh, Python None.*/
     transform: translate(-50%, -50%) scale(0.5);
+    max-width: 100%;
+    text-align: var(--centre);
+}
+
+.CBeebies HD SVG {
+    POSITION: relative; /*Properties can also be in capital letters.*/
+    top: 15%;
+    margin-bottom: 40px;
+    left: 50%;
+    user-select: None; /*Heh, Python None.*/
+    transform: translate(-50%, -50%) scale(0.75);
     max-width: 100%;
     text-align: var(--centre);
 }
@@ -133,3 +144,4 @@ body, html {
 div {
     overflow: hidden;
 }
+
