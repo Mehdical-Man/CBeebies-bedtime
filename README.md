@@ -1,5 +1,6 @@
 # Major news
 Since 20 February 2025, CBeebies has gone to bed is now a web page!
+https://mehdical-man.github.io/CBeebies-bedtime/
 
 # About
 A recreation of the classic CBeebies has gone to bed screen, visible after 19:00. Not the new one (2023–present). The old one (2012–2022).
