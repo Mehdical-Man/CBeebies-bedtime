@@ -1,5 +1,5 @@
 # Major news
-Since 20 February 2025, CBeebies has gone to bed is now a web page!
+Since 20 February 2025, CBeebies has gone to bed is now a website!
 https://mehdical-man.github.io/CBeebies-bedtime/
 
 # About
