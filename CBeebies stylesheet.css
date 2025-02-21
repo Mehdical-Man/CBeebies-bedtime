@@ -125,21 +125,40 @@ body, html {
     }
     .CBeebies sky, .CBeebies ocean  { /* Even no-break spaces are allowed in CSS variable names!
         /* It's a different space! */
+        margin-top: 12%;
         padding-left: 15%;
         padding-right: 15%;
     }
 }
 
-@media  screen and (max-width: 1200px)  and (min-width: 0px){
+
+@media  screen and (max-width: 1200px) and (min-width: 0px){
     body, html {
-        font-size: calc(24px);
+        font-size: 50px;
     }
     .CBeebies sky, .CBeebies ocean  {
         /* It's a different space! */
         padding-left: 10%;
         padding-right: 10%;
     }
+
+    #Mehdical Manǃ {
+        margin-top: 16%;
+    }
+    
+    .CBeebies sky {
+        height: 65%;
+    }
+    
+    .CBeebies ocean {
+        height: 145%;
+        padding-top: 5%;
+    }
+    
 }
+
+
+@media screen and 
 
 div {
     overflow: hidden;
